@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[required]{
+            border: 2px solid palevioletred;
+        }
+
+        div[class~="card"]{
+            box-shadow: 0 0 10px rgb(206, 67, 125);
+            border: 2px solid rgb(63, 32, 4);
+            height: 100px;
+            width: fit-content;
+        }
+
+        div[class~="box"]{
+            box-shadow: 0 0 10px rgb(137, 47, 47);
+            border: 1px solid blueviolet;
+            height: 100px;
+            width: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="card">Class Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorum.</div><br>
+        <div class="box">Product</div><br>
+
+        <label for="">Enter Name</label>
+        <input type="text">
+
+        <label for="">Enter Email</label>
+        <input type="email" required>
+
+        <label for="">Enter Password</label>
+        <input type="password">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
