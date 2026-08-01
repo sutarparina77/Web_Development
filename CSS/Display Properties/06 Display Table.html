@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-Tablle</title>
+    <style>
+        .table{
+            display: table;
+            width: 100%;
+            border: 1px;
+            margin-top: 10px;
+        }
+        .row{
+            display: table-row;
+            background-color: antiquewhite;
+        }
+        .Col{
+            display: table-cell;
+            border: 1px solid rgb(26, 26, 81);
+            padding: 10px;
+            text-align: center;
+        }
+        .header{
+            font-weight: bold;
+            font-size: 20px;
+            background-color: rgb(161, 152, 152);
+        }
+    </style>
+</head>
+<body>
+    <h2>Display : Table Student Details</h2>
+    <div class="table">
+        <div class="row header">
+            <div class="Col">Roll No</div>
+            <div class="Col">Name</div>
+            <div class="Col">Address</div>
+        </div>
+        <div class="row">
+            <div class="Col">101</div>
+            <div class="Col">Virat</div>
+            <div class="Col">Pune</div>
+        </div>
+        <div class="row">
+            <div class="Col">102</div>
+            <div class="Col">Rohit</div>
+            <div class="Col">Delhi</div>
+        </div>
+        <div class="row">
+            <div class="Col">103</div>
+            <div class="Col">Surya</div>
+            <div class="Col">Mumbai</div>
+        </div>
+    </div>
+
+</body>
+</html>
