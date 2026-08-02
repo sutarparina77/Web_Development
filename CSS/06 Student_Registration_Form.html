@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        body{
+            background-color: rgb(185, 225, 211);
+        }
+
+        .FormBox{
+            height: 100%;
+            width: 400px;
+            background-color: white;
+            margin: 40px auto;
+            padding: 50px;
+            border-radius: 4px solid rgb(209,233,233);
+        }
+
+        h3{
+            text-align: center;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color: rgb(20, 20, 151);
+            letter-spacing: 0.5px;
+        }
+        
+        label{
+            font-weight: 500;
+        }
+
+        input,select,textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        input:focus, textarea:focus{
+            border: 2px solid black;
+        }
+
+        button{
+            width: 100%;
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            border: none;
+        }
+
+        button:hover{
+            background-color: green;
+        }
+
+        button:active{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="FormBox">
+        <h3>Student Registration</h3>
+        <label for="">Full Name</label>
+        <input type="text" required placeholder="Enter your name" minlength="20" maxlength="60" title="Please enter only alphabets">
+
+        <label for="">Email ID</label>
+        <input type="email" name="" id="" required placeholder="Enter email" minlength="20" maxlength="30" title="Please enter email id">
+
+        <label for="">Mobile Number</label>
+        <input type="number" placeholder="Enter 10 digit number" minlength="10" maxlength="10" title="Please enter 10 digit number">
+
+        <label for="">Gender</label>
+        <select name="" id="">
+            <option value="">Select</option>
+            <option value="">Male</option>
+            <option value="">Female</option>
+        </select>
+
+        <label for="">Course</label>
+        <select name="" id="">
+            <option value="">Select</option>
+            <option value="">Arts</option>
+            <option value="">Commerce</option>
+            <option value="">Science</option>
+        </select>
+
+        <label for="">Date of Birth</label>
+        <input type="date">
+
+        <label for="">Address</label>
+        <textarea name="" id="" rows="5" cols="20" placeholder="Enter address" minlength="20" maxlength="40" title="Please enter only alphabets"></textarea>
+
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter password" minlength="6" maxlength="8" title="Please enter 6 digit password">
+
+        <button>Register</button>
+    </form>
+</body>
+</html>
