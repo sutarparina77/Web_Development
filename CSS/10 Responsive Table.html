@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table-wrapper{
+            overflow-x: auto;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+        th, td{
+            border: 1px solid black;
+        }
+        th{
+            padding: 10px;
+        }
+        td{
+            padding: 5px;
+        }
+        /* Media query for mobile view*/
+        @media(orientation: landscape)
+        {
+            body{
+                background-color: beige;
+            }
+        }
+        @media(prefers-color-scheme: light)
+        {
+            body{
+                background-color: aquamarine;
+            }
+        }
+        @media(prefers-color-scheme: light)
+        {
+            body{
+                background-color: rgb(212, 132, 138);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Priyanka</td>
+                <td>BCS</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Sakshi</td>
+                <td>BCA</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Swapnali</td>
+                <td>BCom</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
