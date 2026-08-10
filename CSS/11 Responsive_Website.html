@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(238, 235, 235);
+        }
+        .header{
+            background-color: rgb(66, 173, 162);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .nav{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(90, 79, 90);
+            /* padding: 5px; */
+            font-size: 10px;
+        }
+        .nav a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .nav a:hover{
+            color: rgb(250, 250, 182);
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            padding: 15px;
+        }
+        .card{
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            height: auto;
+        }
+       .card img{
+            /* width: 100%; */
+            /* height: auto; */
+            /* border-radius: 10px; */
+        }
+        .footer{
+            background-color: gray;
+            color: white;
+            text-align: center;
+            font-size: 10px;
+            padding: 5px;
+        }
+        @media (min-width:768px){
+
+            .nav{
+                flex-direction: row;
+                justify-content:flex-end;
+                font-size: 10px;
+            }
+            .nav a{
+                flex: 1;
+            }
+            .container{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media(min-width:1024px) and (max-width:1400px){
+
+            .container{
+                max-width: 1100px;
+                margin: auto;
+                grid-template-columns: repeat(3,1fr);
+            }
+            .header{
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Responsive Website</h2>
+    </div>
+    <div class="nav">
+        <a href="#">HOME</a>
+        <a href="#">COURSES</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+    </div>
+    <div class="container">
+        <div class="card">
+            <!-- <img src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg" alt="" height="150px" width="300px"> -->
+            <h3>HTML</h3>
+            <p>HTML is the backbone of every website</p>
+        </div>
+        <div class="card">
+            <!-- <img src="https://placehold.co/300x100.png" alt=""> -->
+            <h3>CSS</h3>
+            <p>CSS controls how your HTML looks</p>
+        </div>
+        <div class="card">
+            <!-- <img src="https://placehold.co/300x100.png" alt=""> -->
+            <h3>JavaScript</h3>
+            <p>JS adds interactivity and logic to your website</p>
+        </div>
+    </div>
+    <div class="footer">
+        &copy;All Rights Reserved.
+    </div>
+</body>
+
+</html>
