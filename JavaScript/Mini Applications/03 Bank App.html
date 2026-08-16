@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Bank App</title>
+    <link rel="stylesheet" href="03Style.css" />
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="header">
+            <div class="icon">🏦</div>
+            <h1>BANK APP</h1>
+        </div>
+
+        <div class="balance-box">
+            <div class="balance-label">Current Balance  💰</div>
+            <div class="balance-value" id="balanceDisplay">₹0.00</div>
+        </div>
+
+        <div class="input-row">
+            <input type="number" id="amountInput" placeholder="Enter amount" min="0" />
+        </div>
+
+        <div class="btn-row">
+            <button class="btn-deposit" id="depositBtn">Deposit</button>
+            <button class="btn-withdraw" id="withdrawBtn">Withdraw</button>
+        </div>
+
+        <div class="message" id="messageBox"></div>
+
+        <div class="history">
+            <div class="history-title">Transaction History</div>
+            <div id="historyList"></div>
+        </div>
+    </div>
+
+    <script src="03Script.js"></script>
+</body>
+
+</html>
