@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="09 Style.css">
+</head>
+<body>
+    <div class="Calc">
+        <h1>EMI Calculator 💰</h1>
+        <label for="">Principal Amount (₹)</label>
+        <input type="number" id="Amount"><br><br>
+
+        <label for="">Interest Rate (%)</label>
+        <input type="text" id="Rate"><br><br>
+
+        <label for="">Tenure (Years)</label>
+        <input type="number" id="Years"><br>
+
+        <div class="show">
+            <button onclick="Calc_EMI()">Show EMI</button><br>
+        </div>
+
+        <div class="result" id="result"></div>
+
+        <div class="res">
+            <input type="text" id="SI" readonly><br><br>
+            <input type="text" id="CI" readonly><br><br>
+            <input type="text" id="EMI" readonly><br><br>
+        
+        </div>
+        <div class="res-button">
+            <button>Simple Interest</button>
+            <button>Compound Interest</button>
+            <button>Monthly EMI</button>
+        </div>
+            
+        
+    </div>
+    <script src="09 Script.js"></script>
+</body>
+</html>
