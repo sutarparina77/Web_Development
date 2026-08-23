@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50%;
+}
+
+.Calc{
+    background-color: rgb(92, 75, 78);
+    border: 1 px solid black;
+    width: 500px;
+    margin: 50px auto;
+    display: grid;
+    border-radius: 20px;
+    color: white;
+    padding: 30px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1{
+    font-size: 40px;
+    word-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+label{
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    display: block;
+}
+
+input{
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 50%;
+    height: 80px;
+    margin-top: 10px;
+    background-color: rgb(149, 200, 149);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 27px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.show{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.show button{
+    background-color: green;
+}
+
+.show button:hover{
+    background-color: rgb(149, 200, 149);
+}
+
+.res, .res-button{
+    display: flex;
+    gap: 25px;
+    min-width: 140px;
+    height: 100%;
+    margin: 10px 0 0 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.res input{
+    padding: 15px 10px;
+    font-size: 30px;
+    min-width: 135px;
+    min-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.res-button button:hover{
+    background-color: rgb(205, 130, 130);
+}
