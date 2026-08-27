@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex and Grid</title>
+    <style>
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(132, 132, 128);
+            color: white;
+            padding: 20px;
+        }
+        .menu{
+            display: flex;
+            gap: 20px;
+            font-size: 15px;
+        }
+        .page{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 60px 1fr 30px;
+            grid-template-areas: 
+            "header header"
+            "sidebar content"
+            "footer footer";
+            height: 100vh;
+        }
+        .header{
+            grid-area: header;
+            background-color: blueviolet;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: aquamarine;
+        }
+        .content{
+            grid-area: content;
+            background-color: rgb(237, 176, 43);            
+        }
+        .footer{
+            grid-area: footer;
+            background-color: rgb(175, 85, 131);    
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="nav">
+        <div>Logo</div>
+        <div class="menu">
+            <div>HOME</div>
+            <div>ABOUT</div>
+            <div>CONTACT US</div>
+        </div>
+    </div>
+    <!-- main -->
+        <div class="page">
+            <div class="header">Header</div>
+            <div class="sidebar">Sidebar</div>
+            <div class="content">Content</div>
+            <div class="footer">Footer</div>
+        </div>
+</body>
+</html>
