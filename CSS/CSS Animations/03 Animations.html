@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .Box{
+            background-color: burlywood;
+            height: 100px;
+            width: 100px;
+            color: brown;
+            margin: 70px;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse{
+            from{
+                transform: scale(1.5);
+                background-color: blueviolet;
+            }
+            to{
+                transform: scale(2);
+                background-color: aquamarine;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Box">Box</div>
+</body>
+</html>
