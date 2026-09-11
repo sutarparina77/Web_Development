@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+}
+
+body{
+    font-family:'poppins', sans-serif;
+    background: #0B0714;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(9, 19, 53, 0.85);
+}
+
+.navbar{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color:#00e5ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #00e5ff;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 100px;
+}
+
+.home-content{
+    max-width: 650px;
+}
+
+.hello{
+    color: tan;
+    font-size: 20px;
+    animation: slideleft 1s ease;
+}
+
+.home h1{
+    font-size: 65px;
+    margin: 10px 0;
+    animation: slideleft 1.2s ease;
+}
+
+.home h1 span{
+    color: #33cce8;
+}
+
+.home h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    animation: slideleft 1.4s ease
+}
+
+.home h2 span{
+    color: rgb(136, 129, 136);
+}
+
+.home-text{
+    line-height: 1.8;
+    margin-bottom: 30px;
+    animation: slideleft 1.6s ease;
+}
+
+.buttons{
+    display: flex;
+    gap: 15px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration: none;
+    background: whitesmoke;
+    color: #07101c;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.3);
+}
+
+.btn-outline{
+    background: transparent;
+    color: #00e5ff;
+    border: 2px solid #00e5ff;
+}
+
+.social-icons{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-icons a{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1 px solid #00e5ff;
+    border-radius: 50%;
+    color: #00e5ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover{
+    background: #00e5ff;
+    color: #0b1020;
+    transform: translateY(-5px);
+}
+
+.home-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-circle{
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    border: 3px solid #00e5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: rotate 12s linear infinite;
+}
+
+.profile-icon{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00e5ff, #536dfe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: white;
+    overflow: hidden;
+}
+
+.profile-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Section */
+
+.section{
+    padding: 100px 5%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title p{
+    color: #00e5ff;
+}
+
+.section-title h2{
+    font-size: 40px;
+}
+
+.section-title h2 span{
+    color: #00e5ff;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-card{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    border: 1px solid #00e5ff;
+    background: rgba(0, 229, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.about-card:hover{
+    transform: rotate(-3deg) scale(1.05);
+}
+
+.about-card i{
+    font-size: 70px;
+    color: #00e5ff;
+    margin-bottom: 20px;
+}
+
+.about-card p{
+    color: #9da7c2;
+}
+
+.about-content h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-content h3 span{
+    color: #00e5ff;
+}
+
+.about-content p{
+    color: #b7bfd8;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Projects */
+.section{
+    padding-top:10px 30px 50px;
+    width: 100%;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;    
+    justify-content: flex-start;
+}
+
+.project-card{
+    margin-left: 10px;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    background: rgb(50, 45, 45);
+    border: 1px solid #202943;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.project-card:hover{
+    border-color: #00e5ff;
+    box-shadow: 0 20px 40px rgba(0, 229, 255, 0.1);
+}
+
+.project-img{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.project-card h3{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.project-card p{
+    color: #9da7c2;
+    line-height: 1.6;
+}
+
+.project-tags{
+    display: flex;
+    gap: 8px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.project-tags span{
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.project-btn{
+    text-decoration: none;
+    color: #00e5ff;
+}
+
+/* contact */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.info{
+    padding: 60px;
+}
+
+.info h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    color: #9da7c2;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item i {
+    color: #00e5ff;
+    font-size: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #202943;
+    border-radius: 10px;
+    background: #11182b;
+    color: white;
+    outline: none;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.contact-form button{
+    width: 30%;
+    margin: 20px auto;
+    font-size: 15px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #00e5ff;
+} 
+
+/* Footer */
+footer{
+    position: relative;
+    padding: 30px;
+    text-align: center;
+    background: #080d1a;
+    color: white;
+}
+
+@keyframes Slideleft {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
