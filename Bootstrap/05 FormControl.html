@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Control</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+    <h3 class="text text-center mt-5">Form Control</h3>
+    <form action="" class="container mt-4">
+        <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter Your Name">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter Mail ID" required>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+         <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="text" class="form-control" placeholder="Enter Password" maxlength="8">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Address</label>
+            <textarea class="form-control" rows="5"></textarea>
+        </div>
+
+         <div class="mb-3">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-control" placeholder="Enter Date">
+        </div>
+
+         <div class="mb-3">
+            <label class="form-label">Gender :</label>
+
+            <label for="Male" class="form-label"></label>
+            <input type="radio" class="ms-3 me-2" name="Male"> Male
+
+            <label for="Female" class="form-label"></label>
+            <input type="radio" class="ms-3 me-2" name="Female">Female
+
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Course</label>
+            <select class="form-control">
+                <option value="">Select Course</option>
+                <option value="">JavaScript</option>
+                <option value="">Angular</option>
+                <option value="">React</option>
+                <option value="">Next JS</option>
+            </select>
+        </div>
+
+        <div class="mb-3 input-group">
+            <label class="form-label me-3">Enter Mobile No.</label>
+            <span class="input-group-text me-3">+91</span>
+            <input type="number" class="form-control">
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input">
+            <label class="form-check-label">Click before form submitted</label>
+        </div>
+
+        <div class="mb-3">
+            <button class="btn btn-success form-control">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
