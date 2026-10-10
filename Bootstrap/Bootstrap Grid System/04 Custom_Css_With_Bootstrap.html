@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Css</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        /* Declaration of custom css */
+        :root{
+            /* Font Declaration */
+            --fork-fontSmall:10px;
+            --fork-fontMedium:40px;
+            --fork-fontLarge:70px;
+
+            /* Spacing Declaration */
+            --fork-spacingSmall:10px;
+            --fork-spacingMedium:20px;
+            --fork-spacingLarge:30px;
+
+            /* Colors */
+            --fork-primary:rgb(0, 0, 255);
+            --fork-secondary:rgb(128, 128, 128);
+            --fork-success:rgb(0, 128, 0);
+        }
+        
+        h1{
+            font-size: var(--fork-fontLarge);
+            letter-spacing: var(--fork-spacingMedium);
+            background-color: var(--fork-primary);
+        }
+
+        p{
+            background-color: var(--fork-secondary);
+            color:var(--fork-success);
+            font-size: var(--fork-fontMedium);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Customized Css</h1><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus distinctio odit vero ratione culpa,
+        officia possimus, eligendi sint voluptate id itaque. Fugiat obcaecati illo accusantium non iure amet deleniti
+        perferendis, officiis ratione voluptate, accusamus sit! Earum sed accusantium ipsam asperiores.</p>
+
+</body>
+
+</html>
